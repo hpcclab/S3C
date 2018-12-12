@@ -1,3 +1,7 @@
+body{
+  padding-bottom:30px;
+  margin-bottom: 200px;
+}
 .container-custom {
   /*padding-top: 100px;*/
   padding-left: 10px;
@@ -182,4 +186,13 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .sui-upload-button-text:hover{
   background-color:#5A55A3 !important;
   color:white!important;
+}
+
+#filter {
+  height:48px;
+}
+
+#popoverData{
+  margin: 0 auto;
+  float:none;
 }

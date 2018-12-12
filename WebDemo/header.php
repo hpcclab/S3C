@@ -7,7 +7,7 @@
 
     <title>Semantic Search Search over Secured Data in the Cloud</title>
     <!--    Icon -->
-    <link rel="icon" href="images/logo-300x191.jpg">
+    <link rel="icon" href="images/icon.jpg">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
 
     <!--    Extra CSS-->
     <link rel="stylesheet" href="css/extra.css">
-    <link rel="stylesheet" href="extra.css">
+    <link rel="stylesheet" href="css/extra_1.css">
 
     <script>
         $(document).ready(function(){
