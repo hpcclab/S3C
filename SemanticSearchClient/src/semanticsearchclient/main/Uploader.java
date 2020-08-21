@@ -144,6 +144,7 @@ public class Uploader {
      * @return A list of file names.
      */
     private List<String> getFiles(String absPath) {
+    	
         File dir = new File(absPath);
         List<String> files = new ArrayList<String>();
         
@@ -152,10 +153,10 @@ public class Uploader {
             //Get an array of relative file names in the folder
             String[] contents = dir.list();
             for (String file : contents) {
-                files.add(path + File.separator + file); //Give each file its full pathname.
+                files.add(absPath + File.separator + file); //Give each file its full pathname.
             }
         } else { //if it's just one file, return its path name
-            files.add(path);
+            files.add(absPath);
         }
         
         return files;
@@ -189,6 +190,7 @@ public class Uploader {
             //TODO Fix upload location
             cipher.encrypt(Constants.cipherKey, file, Constants.tempLocation + "/"
                             + fileName);
+            
         } catch (Exception e) {
             e.printStackTrace();
         } catch (Throwable e) {
@@ -308,7 +310,7 @@ public class Uploader {
        
         //Now we want to go through all of those files and upload them
         List<String> files = getFiles(Constants.tempLocation);
-        
+        System.out.println(files);
         try {
             //First send over how many files we're sending
             dos = new DataOutputStream (sock.getOutputStream());
@@ -326,7 +328,9 @@ public class Uploader {
         }
         
         for (String file : files) {
-            System.out.print("Attempting to upload " + getRelativeFileName(file) + "... ");
+            System.out.print("Attempting to upload " + getRelativeFileName(file) + "... " + file);
+            
+            System.out.println();
             uploadFileOnNetwork(sock, dos, file);
             System.out.println("done!");
         }
@@ -345,7 +349,7 @@ public class Uploader {
         FileInputStream fis;
         BufferedInputStream bis;
         String fileName = getRelativeFileName(absFilePath);
-        
+        System.out.println("uploadFileOnnet"+absFilePath);
         try {
             //Send over the file name
             
@@ -355,6 +359,9 @@ public class Uploader {
             fis = new FileInputStream(file);
             bis = new BufferedInputStream(fis);
             bis.read(fileBytes, 0, fileBytes.length);
+            
+            
+            
             
             //Send the file name and the length of the file to server.
             dos.writeUTF(fileName);

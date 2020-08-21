@@ -98,9 +98,11 @@ class IndexFile {
        
         switch (Config.indexStorageMethod) {
         case NAMEKEYWORD:
+        	System.out.println("preparePostingList");
             readNameKeywordStyle();
             break;
         case INVERTEDINDEX:
+        	System.out.println("preparePostingListcalled");
             readInvertedIndexStyle();
             break;
         default:
@@ -167,8 +169,10 @@ class IndexFile {
                     String fileName = lineTokens[i];
                     //Add this to the posting list
                     addToPostingList(topic, fileName);
+                    
                 }
             }
+            br.close();
         } catch (IOException e) { 
             System.err.println("Error reading index file");
             e.printStackTrace();
@@ -246,9 +250,11 @@ class IndexFile {
         
         switch (Config.indexStorageMethod) {
         case NAMEKEYWORD:
+        	
             writeNameKeywordStyle();
             break;
         case INVERTEDINDEX:
+        	
             writeInvertedIndexStyle();
             break;
         }
@@ -280,7 +286,10 @@ class IndexFile {
                     bw.write(file + " " + topic.toLowerCase());
                     bw.newLine();
                 }
+                
             }
+            
+            
         } catch (Exception e) {
             System.err.println("Error in writing posting list");
             e.printStackTrace();
@@ -306,7 +315,7 @@ class IndexFile {
                 
                 String topic = it.next();
                 line.append(topic);
-
+                
                 //Get all of the file names that the topic is a keyword for
                 HashSet<String> files = postingList.get(topic);
                 for(String file : files)

@@ -119,7 +119,7 @@ public class SemanticSearchClient {
 	            	}
                 	
 //                	encryptedFile = encryptedFile+"";
-                	System.out.println("File to remove: "+encryptedFile);
+                	System.out.println("File to decrypt: "+encryptedFile);
                 	CipherText thecipher = new CipherText();
                 	File eFile = new File(Constants.inputLocation_encrypted+File.separator+encryptedFile);
                 	if(eFile.exists()){

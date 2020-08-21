@@ -1,10 +1,18 @@
 #!/bin/bash
-a = 'pwd'
-CLIENT_BUILD_DIR=  $a/cloud1
-if [ ! -d "$CLIENT_BUILD_DIR" ]
-then mkdir "$CLIENT_BUILD_DIR"cloud1
-mkdir $a"cloud1/cloudserver"
-cd $a"cloud1"
+if [ ! -d "$(pwd)/cloud" ]
+then mkdir $(pwd)/cloud
+mkdir "cloud/cloudserver"
+cd "cloud"
 cd cloudserver
 mkdir storage utilities watch
 fi
+
+cd ../../
+unzip demo_dataset.zip
+
+cd SemanticSearchClient
+mkdir input
+cd ../
+mv demo_dataset SemanticSearchClient/input/demo_dataset
+
+

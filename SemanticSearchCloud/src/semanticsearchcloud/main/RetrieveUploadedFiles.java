@@ -262,6 +262,7 @@ public class RetrieveUploadedFiles {
             //Go through the contents of the file line by line
             String keyPhrase;
             while ((keyPhrase = br.readLine()) != null) {
+            	System.out.println(keyPhrase);
                 //NOTE: This should be modified so that it's not only for .txt files
                 index.addToPostingList(keyPhrase, fileName.replace(".key", ".txt"));
             }

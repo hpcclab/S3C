@@ -101,6 +101,8 @@ public class Searcher {
         //Iterate through the topics in the inv index
         for (String topic : index.postingList.keySet()) {
             //If the query contains one of these topics, add it to the related files
+        	
+        	
             if (queryVector.contains(topic)) {
                 relatedFiles.addAll(index.postingList.get(topic));
             }
@@ -137,7 +139,7 @@ public class Searcher {
          
         this.index = index;
         ArrayList<String> files =  findRelatedFiles();
-         
+        System.out.println(files); 
         rank = new Ranking(index);
         searchResults = rank.ScoreAllDocuments(files, queryVector);
          

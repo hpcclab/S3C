@@ -51,7 +51,7 @@ public class SemanticSearchCloud {
              
             //Retrieve files from the watched folder
             RetrieveUploadedFiles retriever = new RetrieveUploadedFiles(index);
-//            retriever.retrieve();
+            retriever.retrieve();
              
             //Write everything to the index file.
             index.writePostingListToIndexFile();
@@ -73,7 +73,7 @@ public class SemanticSearchCloud {
             Thread sThread = new Thread(){
             	public void run(){
             		while(true){
-            			search.retrieveSearchQuery();
+            			search.retrieveSearchQuery(); //ok
             			search.rankRelatedFiles(index);
                         search.sendRankedFilesToClient();
             		}
