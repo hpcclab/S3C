@@ -1,5 +1,5 @@
 # Secure Semantic Search in the Cloud (S3C)
-##Introduction
+## Introduction
 This is an open-source program that enables semantic enterprise search for unstructured datasets stored in the cloud. 
 If you are using this tool in your research projects, please cite the following paper:
 ```
