@@ -2,8 +2,17 @@
 
 This is an open-source program that enables semantic enterprise search for unstructured datasets stored in the cloud. 
 If you are using this tool in your research projects, please cite the following paper:
-
-"Jason Woodworth, Mohsen Amini Salehi, Vijay Raghavan, S3C: An Architecture for Space-Efficient Semantic Search over Encrypted Data in the Cloud, in Workshop on Privacy and Security of Big Data (PSBD) as part of the IEEE Big Data Conference, Washington DC,  USA, Dec. 2016", available in the following URL:
+```
+@inproceedings{woodworth2016s3c,
+  title={S3C: An architecture for space-efficient semantic search over encrypted data in the cloud},
+  author={Woodworth, Jason and Salehi, Mohsen Amini and Raghavan, Vijay},
+  booktitle={Proceedings of the 4th IEEE International Conference on Big Data},
+  series={Big Data'16},
+  pages={3722--3731},
+  year={2016},
+  month={December}
+}
+```available in the following URL:
 http://hpcclab.org/paperPdf/bigdata16/bigdata16.pdf
 
 Below, you can find the steps to execute the program:
