@@ -7,7 +7,8 @@ If you are using this tool in your research projects, please cite the following 
 http://hpcclab.org/paperPdf/bigdata16/bigdata16.pdf
 
 Below, you can find the steps to execute the program:
-1. To provide full access to the project folder: chmod a+x "/path/to the downloaded/folder/and/its contens.  for example: chmod a+x /home/S3C/* 
+1. To provide full access to the project folder: chmod a+x "/path/to the downloaded/folder/and/its contens.  for example:
+```chmod a+x /home/S3C/*``` 
 2. Execute script "./exec.sh" to create folder + unzip demo dataset. 
 3. Check 'cloud' folder is created in the parent folder. That means script runs succeffully. 
 4. Open Eclipse on other Java IDE
