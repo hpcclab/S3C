@@ -1,5 +1,12 @@
 # Secure Semantic Search in the Cloud (S3C)
 
+This is an open-source program that enables semantic enterprise search for unstructured datasets stored in the cloud. 
+If you are using this tool in your research projects, please cite the following paper:
+
+"Jason Woodworth, Mohsen Amini Salehi, Vijay Raghavan, S3C: An Architecture for Space-Efficient Semantic Search over Encrypted Data in the Cloud, in Workshop on Privacy and Security of Big Data (PSBD) as part of the IEEE Big Data Conference, Washington DC,  USA, Dec. 2016", available in the following URL:
+http://hpcclab.org/paperPdf/bigdata16/bigdata16.pdf
+
+Below, you can find the steps to execute the program:
 1. To provide full access to the project folder: chmod a+x "/path/to the downloaded/folder/and/its contens.  for example: chmod a+x /home/S3C/* 
 2. Execute script "./exec.sh" to create folder + unzip demo dataset. 
 3. Check 'cloud' folder is created in the parent folder. That means script runs succeffully. 
