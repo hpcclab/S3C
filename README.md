@@ -15,7 +15,7 @@ If you are using this tool in your research projects, please cite the following 
 ```
 The paper is also available in the following address:
 http://hpcclab.org/paperPdf/bigdata16/bigdata16.pdf
-
+## How to Install and Execute the Project
 Below, you can find the steps to execute the program:
 1. To provide full access to the project folder: chmod a+x "/path/to the downloaded/folder/and/its contens.  for example:
 ```chmod a+x /home/S3C/*``` 
