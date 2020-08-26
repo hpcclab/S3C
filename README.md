@@ -1,4 +1,4 @@
-# S3C
+# Secure Semantic Search in the Cloud (S3C)
 
 1. To provide full access to the project folder: chmod a+x "/path/to the downloaded/folder/and/its contens.  for example: chmod a+x /home/S3C/* 
 2. Execute script "./exec.sh" to create folder + unzip demo dataset. 
