@@ -1,5 +1,5 @@
 # Secure Semantic Search in the Cloud (S3C)
-
+##Introduction
 This is an open-source program that enables semantic enterprise search for unstructured datasets stored in the cloud. 
 If you are using this tool in your research projects, please cite the following paper:
 ```
@@ -13,7 +13,7 @@ If you are using this tool in your research projects, please cite the following 
   month={December}
 }
 ```
-The paper is also available in the following URL:
+The paper is also available in the following address:
 http://hpcclab.org/paperPdf/bigdata16/bigdata16.pdf
 
 Below, you can find the steps to execute the program:
