@@ -12,7 +12,8 @@ If you are using this tool in your research projects, please cite the following 
   year={2016},
   month={December}
 }
-```available in the following URL:
+```
+The paper is also available in the following URL:
 http://hpcclab.org/paperPdf/bigdata16/bigdata16.pdf
 
 Below, you can find the steps to execute the program:
