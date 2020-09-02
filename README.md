@@ -29,9 +29,10 @@ Below, you can find the steps to execute the program:
 4. Check 'cloud' folder is created in the parent folder. That means script runs successfully. 
 5. Open Eclipse on other Java IDE
 6. Import two project:
- 	a.Open Project -> Path to S3C -> Semantic Search Client
-  b.a.Open Project -> Path to S3C -> Semantic Search Cloud 
+ 	a. Open Project -> Path to S3C -> Semantic Search Client
+  b. Open Project -> Path to S3C -> Semantic Search Cloud 
 
+6.1. If you see an error in the client code, you need to add the "jsoup" jar file. For that purpose, in the project, find "lib" directory, right-click on jsoup-1.8.2.jar in that directory and click on "Build path" and choose "Add to Build Path"
 7. Run cloud project -> (Main class: SemanticSearchCloud.java)
 8. Run client project -> (Main class: SemanticSearchClient.java)
 9. 
