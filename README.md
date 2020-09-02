@@ -33,8 +33,11 @@ Below, you can find the steps to execute the program:
   b. Open Project -> Path to S3C -> Semantic Search Cloud 
 
 6.1. If you see an error in the client code, you need to add the "jsoup" jar file. For that purpose, in the project, find "lib" directory, right-click on jsoup-1.8.2.jar in that directory and click on "Build path" and choose "Add to Build Path"
+
 7. Run cloud project -> (Main class: SemanticSearchCloud.java)
+
 8. Run client project -> (Main class: SemanticSearchClient.java)
+
 9. 
    a. Type ```-u``` in client console.
    b. Provide the upload path. Type ```input/demo_dataset```. Our demo dataset is ready to be uploaded. 
