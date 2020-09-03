@@ -24,7 +24,7 @@ Below, you can find the steps to execute the program:
 1. Clone the repository:
 ```git clone https://github.com/hpcclab/S3C.git ```
 2. Provide full access to the project folder: chmod a+x "/path/to/the/repository/folder/and/its contens. Example:
-```chmod a+x /home/S3C/*``` 
+```chmod a+x /home/[PATHTOFOLDER]/S3C/*``` 
 3. Execute script ```./exec.sh``` to create folder + unzip demo dataset. 
 4. Check 'cloud' folder is created in the parent folder. That means script runs successfully. 
 5. Open Eclipse on other Java IDE
