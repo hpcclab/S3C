@@ -48,9 +48,9 @@ Below, you can find the steps to execute the program:
 11. Re-run client project. Type ```-s``` to search over the index.
 
 12. From the result, keep a note of the file (s) that you want to decrypt. 
-13. Go to Semantic Search Client -> uploads folder. Copy those files into semantic Search Client -> data-> input_encrypted folder.
-14. Re-run Client project. Choose '-d' to decrypt resulted document. Insert file_name.txt. 
-15. After getting successful message, go to semantic Search Client -> data-> output_decrypted folder. Open the decrypted file to read the content!!
+13. Go to Semantic Search Client -> uploads folder. Copy those files into ``` semantic Search Client -> data-> input_encrypted folder```
+14. Re-run Client project. Choose ```-d``` to decrypt resulted document. Insert ```file_name.txt``` 
+15. After getting successful message, go to ``` semantic Search Client -> data-> output_decrypted folder```. Open the decrypted file to read the content!!
 
 ## How to Contribute
 We welcome new features, extension, or enhancements of S3C.
