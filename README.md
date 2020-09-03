@@ -27,7 +27,7 @@ Below, you can find the steps to execute the program:
 ```chmod a+x /home/[PATHTOFOLDER]/S3C/*``` 
 3. Execute script ```./exec.sh``` to create folder + unzip demo dataset. 
 4. Check 'cloud' folder is created in the parent folder. That means script runs successfully. 
-5. Open Eclipse on other Java IDE
+5. Open Eclipse or other Java IDE
 6. Import two project:
  	a. Open Project -> Path to S3C -> ```SemanticSearchClient```
   b. Open Project -> Path to S3C -> ``` SemanticSearchCloud ```
