@@ -12,6 +12,7 @@ unzip demo_dataset.zip
 
 cd SemanticSearchClient
 mkdir input
+mkdir uploads
 cd ../
 mv demo_dataset SemanticSearchClient/input/demo_dataset
 
